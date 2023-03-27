@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <script>
+        function media(){
+            let nums = [];
+            let soma = 0;
+
+            // Enchendo a array com os numeros
+            for(var v=15;v>=15 & v<=100;v++){
+                nums.push(v);
+            }
+
+            // Media
+            for(var i=0;i < nums.length;i++){
+                soma += nums[i]
+            }
+
+            let media = soma/nums.length
+
+            alert("Media aritmética dos numeros inteiros entre e incluindo 15 e 100: " + media);
+        }
+        media();
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        function media(){
+            let n1 = parseFloat(prompt("Digite a primeira nota:"))
+            let n2 = parseFloat(prompt("Digite a segunda nota:"))
+            let m1 = (n1 + n2)/2;
+
+            alert("Media do aluno: " + m1)
+
+            if(m1>=9.5){
+                alert("Parabens! o aluno passou.")
+            }else{
+                alert("Infelizmente o aluno reprovou.")
+            }
+
+            var init = prompt("Deseja calcular a media de outro aluno? (s/n)")
+
+            if(init == "s"){
+                media();
+            }else if(init == "n"){
+                alert("Programa encerrado.")
+            }else{
+                alert("Erro, escolha uma das opções.")
+            }
+        }
+        
+        media()
+
+    </script>
+</body>
+</html>

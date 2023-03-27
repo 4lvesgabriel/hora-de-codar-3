@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+</head>
+<body>
+    <script>
+        var n1 = parseInt(prompt("Digite o primeiro valor:"));
+        var n2 = parseInt(prompt("Digite o segundo valor:"));
+
+        function media(){
+            let m1 = ((n1 + n2) / 2);
+            let nums = []
+            let soma = 0;
+
+            for(var i = n1;i<n2;i++){
+                if(i==n1){
+                    
+                }else{
+                    nums.push(i)
+                }
+            }
+
+            for(var i=0;i < nums.length;i++){
+                soma += nums[i]
+            }
+
+            let m2 = soma/nums.length;
+
+            alert("Media dos dois numeros informados: " + m1);
+            alert("Media dos numeros inteiros entre os dois numeros informados: " + m2);
+        }
+        media();
+    </script>
+</body>
+</html>
